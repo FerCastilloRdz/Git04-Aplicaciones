@@ -6,6 +6,94 @@
     <title>Fundamentos JS</title>
 </head>
 <body>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">"
+    <main class="container mt-5">
+        <div class="row text-center">
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresilla</h5>
+                        <p class="lead">$300.00</p>
+                        <button
+                        class="btn btn-primary btn-sm"
+                        data-fruta="fresilla"
+                        data-precio="300"
+                        >
+                         Agregar
+                    </button>
+                    </div>
+                </div>
+
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana</h5>
+                        <p class="lead">$850.00</p>
+                        <button
+                        class="btn btn-primary btn-sm"
+                        data-fruta="Banana"
+                        data-precio="850"
+                        >
+                         Agregar
+                    </button>
+                    </div>
+                </div>
+
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manzana</h5>
+                        <p class="lead">$900.00</p>
+                        <button
+                        class="btn btn-primary btn-sm"
+                        data-fruta="Manzana"
+                        data-precio="900"
+                        >
+                         Agregar
+                    </button>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </main>
+    <section class="container mt-30">
+        <ul class="list-group" id="carrito"></ul>
+    </section>
+
+    <footer class="container mt-3">
+        <template id="templateFooter">
+            <div class="card">
+                <div class=".card-body.d-flex.justify-content-between align-items.center">
+                    <p class="lead-mb-0">TOTAL: $<span>500</span></p>
+                    <button class="btn btn-outline-primary">
+                        Finalizar Compra
+                    </button>
+                </div>
+            </div>
+        </template>
+    </footer>
+    <template id="template"> 
+        <li class="list-group text-uppercase bg-secondary text-white">
+            <span class="badge bg-primary rounded-pill align-middle">
+                10
+            </span>
+            <span class="lead align-middle">
+                item
+            </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items.center"></li>
+        <div>
+            <p class="lead mb-0">
+                Total: $<span>200</span>
+            </p>
+        </div>
+        <button class="btn btn-sm btn-success">Agregar</button>
+        <button class="btn btn-sm btn-danger">Quitar</button>
+    </template>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
